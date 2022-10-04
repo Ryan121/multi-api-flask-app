@@ -1,0 +1,27 @@
+<!-- Inherits from main.html -->
+{% extends 'main.html' %}
+
+<!-- All the content from our child template we want to be served in the parent, must sit within this block -->
+{% block content %} 
+
+    <section>
+      <div class="body">
+        <h1>HELLO!</h1>
+        <form method="POST">
+            <div>
+                <input type="text" name="city" placeholder="London..."></input>
+            </div>
+            <div>
+                <input type="text" name="country" placeholder="UK..."></input>
+            </div>
+            <div>
+                <button type="submit">Get Weather</button>
+            </div>
+
+        </form>
+
+
+      </div>
+    </section>
+
+{% endblock %}

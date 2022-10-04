@@ -1,0 +1,20 @@
+<!-- Inherits from main.html -->
+{% extends 'main.html' %}
+
+<!-- All the content from our child template we want to be served in the parent, must sit within this block -->
+{% block content %} 
+
+    <section>
+      <div class="body">
+        <h1>Current weather for {{city}}, {{country}}</h1>
+        <h2>Temperature: {{temp}} </h2>
+        <h2>Humdidity: {{humidity}} </h2>
+        <h2>Wind Speed: {{wind}} </h2>
+
+
+
+
+      </div>
+    </section>
+
+{% endblock %}

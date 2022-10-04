@@ -1,0 +1,19 @@
+<!-- Inherits from main.html -->
+{% extends 'main.html' %}
+
+
+
+<!-- All the content from our child template we want to be served in the parent, must sit within this block -->
+{% block content %} 
+
+    <section>
+      <div class="body">
+        <h3>{{ user.name }}!</h3>
+        <h3>{{ user.w }}!</h3>
+        <h3>{{ user.e }}!</h3>
+
+      </div>
+    </section>
+
+{% endblock %}
+
