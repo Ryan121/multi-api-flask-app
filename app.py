@@ -6,6 +6,9 @@ import json
 import os
 from pprint import pprint
 
+# Run flask app
+# flask --app app --debug run
+
 app = Flask(__name__)
 
 # Create a route function and & render the index.html template
