@@ -1,0 +1,7 @@
+eksctl create cluster -f cluster.yml
+
+eksctl delete cluster -f cluster.yml
+
+kubectl apply -f deployment.yml
+
+kubectl apply -f service.yml
